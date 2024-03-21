@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UKM Homepage</title>
+
+    <style>
+
+    body {
+      background-color: lightblue;
+      background-image: url(ukmpic.jpg);
+      background-size: cover;
+      }
+
+      p{
+        margin-bottom: 0;
+        text-align: center;
+        font-family: "Arial";
+        font-size: 45px;
+        font-weight: bold;
+        color: rgba(251,165,0,255);
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgb(0, 0, 0);
+      }
+
+      .logo-grid{
+        margin-top: 90px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 0px;
+      }
+
+      .title-grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+
+      .ukm-logo-1{
+        text-align: start;
+        text-align: center;
+      }
+
+      .ukm-logo-a{
+        margin-right: 100px;
+        width: 45%;
+      }
+
+      .ukm-logo-b{
+        width: 60%;
+      }
+
+      .ukm-logo-2{
+        text-align: center;
+      }
+
+      .malay-title{
+        width: 100%;
+      }
+
+      .eng-title{
+        width: 100%;
+        margin-top: 0;
+      }
+
+      .learning-center{
+        width: 100%;
+        margin-top: 0;
+      }
+
+      .eande 
+      {
+        background-color: rgba(126,131,186,255);
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 30px 30px;
+        transition: opacity 0.15s;
+        vertical-align: top;
+        width: 100%;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+      }
+
+      .eande:hover
+      {
+        opacity: 0.8;
+      }
+
+      .eande:active
+      {
+        opacity: 0.5;
+      }
+
+      .ir 
+      {
+        background-color: rgba(221,81,126,255);
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 30px 30px;
+        transition: opacity 0.15s;
+        vertical-align: top;
+        width: 100%;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+      }
+
+      .ir:hover
+      {
+        opacity: 0.8;
+      }
+
+      .ir:active
+      {
+        opacity: 0.5;
+      }
+
+      .mech 
+      {
+        background-color: rgba(85,108,201,255);
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 30px 30px;
+        transition: opacity 0.15s;
+        vertical-align: top;
+        width: 100%;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+      }
+
+      .mech:hover
+      {
+        opacity: 0.8;
+      }
+
+      .mech:active
+      {
+        opacity: 0.5;
+      }
+
+      .plc 
+      {
+        background-color: rgba(251,53,66,255);
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 30px 30px;
+        transition: opacity 0.15s;
+        vertical-align: top;
+        width: 100%;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+      }
+
+      .plc:hover
+      {
+        opacity: 0.8;
+      }
+
+      .plc:active
+      {
+        opacity: 0.5;
+      }
+
+      .auto 
+      {
+        background-color: rgba(148,80,219,255);
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 30px 30px;
+        transition: opacity 0.15s;
+        vertical-align: top;
+        width: 100%;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+      }
+
+      .auto:hover
+      {
+        opacity: 0.8;
+      }
+
+      .auto:active
+      {
+        opacity: 0.5;
+      }
+
+      .cust 
+      {
+        background-color: rgba(82,216,217,255);
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 30px 30px;
+        transition: opacity 0.15s;
+        vertical-align: top;
+        width: 100%;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+      }
+
+      .cust:hover
+      {
+        opacity: 0.8;
+      }
+
+      .cust:active
+      {
+        opacity: 0.5;
+      }
+
+      .course-button{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 0;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      .eande-course{
+        width: 100%;
+      }
+
+      .ir-course{
+        width: 100%;
+      }
+
+      .mech-course{
+        width: 100%
+      }
+
+      .plc-course{
+        width: 100%;
+      }
+
+      .auto-course{
+        width: 100%;
+      }
+
+      .cust-course{
+        width: 100%;
+      }
+
+      .company-logo-grid{
+        display: grid;
+        grid-template-rows: 1fr;
+      }
+
+      .company-logo-1{
+        text-align: center;
+      }
+
+      .company-logo-a{
+        width: 6%;
+        margin-top: 0px;
+      }
+
+      .text-top{
+        color: rgb(255, 167, 4);
+        font-family: "Arial";
+        font-size: 20px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-align: center;
+        margin-top: 130px;
+      }
+
+      .text-bottom{
+        color: rgb(255, 167, 4);
+        font-family: "Arial";
+        font-size: 20px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+      <div class="logo-grid">    
+        <div class="ukm-logo-1">
+          <img class="ukm-logo-a" src="ukm-logo-1.png">
+        </div>
+        <div class="ukm-logo-2">
+          <img class="ukm-logo-b" src="ukm-logo-2.png">
+        </div>
+      </div>
+
+      <div class="title-grid">
+        <div>
+          <p class="malay-title">
+            JABATAN PENDIDIKAN KEJURUTERAAN
+          </p>
+        </div>
+        <div>
+          <p class="eng-title">
+            DEPARTMENT OF ENGINEERING EDUCATION
+          </p>
+        </div>
+
+        <div>
+          <p class="learning-center">
+            UKM DIGITAL IMMERSIVE LEARNING CENTER
+          </p>
+        </div>
+      </div>
+
+    <div class="course-button">
+      <div class="eande-course">
+      <a href="youtube.html" target="_blank">
+      <button class="eande">
+        ELECTRIC & ELECTRONICS
+      </button></a>
+      </div>
+      
+      <div class="ir-course">
+      <a href="youtube.html" target="_blank">
+      <button class="ir">
+        INDUSTRIAL ROBOTICS
+      </button></a>
+      </div>
+      
+      <div class="mech-course">
+      <a href="youtube.html" target="_blank">
+      <button class="mech">
+       MECHANICAL
+      </button></a>
+      </div>
+
+      <div class="plc-course">
+      <a href="youtube.html" target="_blank">
+      <button class="plc">
+        PRODUCTION - PLC
+      </button></a>
+      </div>
+      
+      <div class="auto-course">
+      <a href="youtube.html" target="_blank">
+      <button class="auto">
+        AUTOMOTIVE
+      </button></a>
+      </div>
+      
+      <div class="cust-course">
+        <a href="youtube.html" target="_blank">
+        <button class="cust">
+         CUSTOM MODULES
+      </button></a>
+      </div>
+    </div>
+    
+    <div class="compony-logo-grid">
+      <div class="text-top">
+        CREATED BY
+      </div>
+      <div class="company-logo-1">
+        <img class="company-logo-a" src="company-logo.png">
+      </div>
+      <div class="text-bottom">
+        SILICONMAX ARVR
+      </div>
+    </div>
+
+  </body>
+</html>
